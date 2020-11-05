@@ -9,10 +9,12 @@ import { MenuOutlined, UserOutlined  } from '@ant-design/icons';
 
 // components
 import Header from './components/Header'
+import Filters from './components/Filters'
+import Aptos from './components/Aptos'
 
 const App = () => {
   return (
-    <Layout>
+    <Layout style={{height: '100vh'}}>
       <MenuSider breakpoint="lg" collapsedWidth="0">
         <div>
           <p>Menu</p>
@@ -28,7 +30,8 @@ const App = () => {
         </Navbar>
         <Container >
           <div className="site-layout-background">
-            content
+            <Filters />
+            <Aptos />
           </div>
         </Container>
       </Layout>

@@ -24,7 +24,7 @@ const Index = () => {
       />
       <TitleHeader>
         <div>
-          <h3>Terrazino cumbres -</h3>
+          <h3>Terrazino cumbres &middot;  </h3>
           <h3 className="city">Envigado </h3>
         </div>
         <p>Carrera 43A No. 49B Sur - 82</p>

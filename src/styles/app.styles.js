@@ -52,7 +52,7 @@ export const Container = styled(Content)`
   .site-layout-background {
     background: #fff;
     border-radius: 1rem;
-
+    
   }
 `;
 
