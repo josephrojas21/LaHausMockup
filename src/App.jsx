@@ -26,7 +26,7 @@ const App = () => {
         <Navbar >
           <Header/>
         </Navbar>
-        <Container style={{ margin: "24px 16px 0" }}>
+        <Container >
           <div className="site-layout-background">
             content
           </div>

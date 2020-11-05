@@ -43,11 +43,16 @@ export const MenuSider = styled(Sider)`
 export const Navbar = styled(Header)`
   background: #fff;
   height: 9rem;
+  position: relative;
 `;
 
 export const Container = styled(Content)`
+  margin: 2.4rem 3rem;
+
   .site-layout-background {
     background: #fff;
+    border-radius: 1rem;
+
   }
 `;
 

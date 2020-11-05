@@ -1,12 +1,18 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 //styles
-import { ButtonBack, ImageHeader, WrapperHeader, TitleHeader } from './header.styles';
+import { ButtonBack, ImageHeader, WrapperHeader, TitleHeader, MenuDiv } from './header.styles';
 
 // libraries
-import { Image , Avatar } from "antd";
+import { Menu } from "antd";
 
 const Index = () => {
+  const [current, setCurrent ] = useState('prices')
+
+  const handleClick = e => {
+    setCurrent( e.key);
+  };
+
+
   return (
     <WrapperHeader>
       <ButtonBack/>
@@ -23,6 +29,19 @@ const Index = () => {
         </div>
         <p>Carrera 43A No. 49B Sur - 82</p>
       </TitleHeader>
+      <MenuDiv>
+        <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+          <Menu.Item key="reports">
+            Reportes
+          </Menu.Item>
+          <Menu.Item key="prices">
+            Lista de precios
+          </Menu.Item>
+        </Menu>
+      </MenuDiv>
+      
+
+
     </WrapperHeader>
   )
 }

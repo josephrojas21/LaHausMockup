@@ -15,6 +15,7 @@ export const ButtonBack = styled(LeftOutlined)`
     height: 38px;
     align-self: center;
     box-shadow: 1px 1px 4px 2px #F0F0F0;
+    cursor: pointer;
 `;
 
 export const  ImageHeader = styled(Image)`
@@ -36,6 +37,7 @@ export const TitleHeader = styled.div`
 
   .city {
     font-weight: 400;
+    margin-left: 1rem;
   }
 
   h3 {
@@ -49,5 +51,12 @@ export const TitleHeader = styled.div`
     font-size: 1.2rem;
     line-height: 4;
   }
+`;
 
+export const MenuDiv = styled.div`
+  position: absolute;
+  right: 0;
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
 `;
