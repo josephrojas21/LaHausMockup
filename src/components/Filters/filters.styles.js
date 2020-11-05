@@ -20,8 +20,8 @@ export const WrapperData = styled.div`
 
 export const SelectInput = styled(Select)`
   .ant-select-selector {
-    border: 1.4px solid #005e14;
-    border-radius: 3rem;
+    border: 2px solid #005e14 !important;
+    border-radius: 3rem !important;
   }
 `;  
 
