@@ -22,6 +22,10 @@ export const  ImageHeader = styled(Image)`
   align-self: center;
   margin: 0 3rem;
   padding: 1rem 0px;
+
+  @media only screen and (max-width: 820px){
+    display: none;
+  }
 `;
 
 export const TitleHeader = styled.div`
@@ -30,6 +34,10 @@ export const TitleHeader = styled.div`
   flex-direction: column;
   height: 100%;
   justify-content: center;
+  
+  @media only screen and (max-width: 820px){
+    display: none;
+  }
 
   div{
     display: flex;
@@ -55,7 +63,7 @@ export const TitleHeader = styled.div`
 
 export const MenuDiv = styled.div`
   position: absolute;
-  right: 0;
+  right: 4rem;
   display: flex;
   height: 100%;
   align-items: flex-end;

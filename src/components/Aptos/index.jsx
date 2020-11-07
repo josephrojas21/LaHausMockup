@@ -1,4 +1,4 @@
-import Reactfrom from "react";
+import React from "react";
 import { TorrePisos } from './../../data/db'
 // styles
 import { WrapperAptos, RowDiv, FloorDiv, CardApto } from "./aptos.styles";
@@ -11,15 +11,15 @@ const Index = () => {
   return (
     <WrapperAptos>
       {data.map((d) => (
-        <RowDiv>
+        <RowDiv key={d.piso}>
           <FloorDiv>
             <span>Piso</span>
-            <span><strong>{d.piso}</strong></span>
+            <p><strong>{d.piso}</strong></p>
           </FloorDiv>
           {d.aptos.map(( i) => (
-            <CardApto title={i.estado} bordered={false} style={{ width: 100 }}>
-              <p className="numApto">{i.num}</p>
-              <p className="areaApto">{i.area} m</p>
+            <CardApto key={i.num} title={i.estado} bordered={false} backgroundColor={i.estado} >
+              <p className="numApto"><strong>{i.num}</strong></p>
+              <p className="areaApto">{i.area} m<sup>2</sup></p>
               <p className="tipoApto">{i.tipo}</p>
             </CardApto>
           ))}

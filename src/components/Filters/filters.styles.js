@@ -1,47 +1,20 @@
 import styled from 'styled-components';
-import { Select, Button } from "antd";
+import {  Button } from "antd";
 
-export const WrapperData = styled.div`
+
+
+export const WrapperFilters = styled.div`
   display: grid;
-  border-bottom: 1px solid #F0F0F0;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
   padding: 2rem 4rem;
 
-
-  @media only screen and (min-width: 500px) and (max-width: 950px){
+  @media only screen and (min-width: 450px) and (max-width: 620px){
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media only screen and (min-width: 951px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-`;
-
-export const SelectInput = styled(Select)`
-  .ant-select-selector {
-    border: 2px solid #005e14 !important;
-    border-radius: 3rem !important;
-  }
-`;  
-
-export const Info = styled.div`
-  strong {
-    color: #005e14;
-  }
-
-  span:last-child {
-    margin-left: 1rem;
-  }
-`;
-
-export const WrapperFilters = styled(WrapperData)`
-   border-bottom: none;
-  grid-template-columns: repeat(2, 1fr);
-
-
-  @media only screen and (min-width: 500px) and (max-width: 950px){
-    grid-template-columns: repeat(4, 1fr);
+  @media only screen and (min-width: 621x) and (max-width: 950px){
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media only screen and (min-width: 951px) {

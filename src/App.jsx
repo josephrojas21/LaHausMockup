@@ -9,6 +9,7 @@ import { MenuOutlined, UserOutlined  } from '@ant-design/icons';
 
 // components
 import Header from './components/Header'
+import InputData from './components/InputData'
 import Filters from './components/Filters'
 import Aptos from './components/Aptos'
 
@@ -30,8 +31,11 @@ const App = () => {
         </Navbar>
         <Container >
           <div className="site-layout-background">
-            <Filters />
-            <Aptos />
+            <InputData />
+            <div className="scrollDiv">
+              <Filters />
+              <Aptos />
+            </div>
           </div>
         </Container>
       </Layout>
